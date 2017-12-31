@@ -63,7 +63,7 @@ module Wanikani
         get(path, Array(Vocabulary))
       else
         # this is undocumented in the API, but in practice it works this way
-        get(path, General(Array(Vocabulary)))
+        get(path, General(Array(Vocabulary))).general
       end
     end
 

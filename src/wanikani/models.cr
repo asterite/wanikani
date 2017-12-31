@@ -118,7 +118,7 @@ module Wanikani
       reading_current_streak: Int32?,
       meaning_note: String?,
       reading_note: String?,
-      user_synonyms: String?,
+      user_synonyms: Array(String)?,
     )
   end
 
@@ -130,12 +130,24 @@ module Wanikani
         seconds == 0 ? nil : Time.epoch(seconds)
       end
     end
+
+    def self.to_json(value : Time?, json : JSON::Builder)
+      if value
+        json.scalar(value.epoch)
+      else
+        json.null
+      end
+    end
   end
 
   # :nodoc:
   module StringToInt32Converter
     def self.from_json(value : JSON::PullParser) : Int32
       value.read_string.to_i
+    end
+
+    def self.to_json(value : Int32, json : JSON::Builder)
+      json.scalar(value.to_s)
     end
   end
 end
