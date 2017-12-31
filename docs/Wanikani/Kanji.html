@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/asterite/wanikani">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Wanikani::Kanji - github.com/asterite/wanikani</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani" data-name="wanikani">
+      <a href="../Wanikani.html">Wanikani</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/asterite/wanikani/Wanikani/API" data-name="wanikani::api">
+      <a href="../Wanikani/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/API/Error" data-name="wanikani::api::error">
+      <a href="../Wanikani/API/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/CriticalItem" data-name="wanikani::criticalitem">
+      <a href="../Wanikani/CriticalItem.html">CriticalItem</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/asterite/wanikani/Wanikani/Kanji" data-name="wanikani::kanji">
+      <a href="../Wanikani/Kanji.html">Kanji</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/LevelProgression" data-name="wanikani::levelprogression">
+      <a href="../Wanikani/LevelProgression.html">LevelProgression</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Radical" data-name="wanikani::radical">
+      <a href="../Wanikani/Radical.html">Radical</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/RecentUnlock" data-name="wanikani::recentunlock">
+      <a href="../Wanikani/RecentUnlock.html">RecentUnlock</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/SrsDistribution" data-name="wanikani::srsdistribution">
+      <a href="../Wanikani/SrsDistribution.html">SrsDistribution</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/StudyQueue" data-name="wanikani::studyqueue">
+      <a href="../Wanikani/StudyQueue.html">StudyQueue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserInformation" data-name="wanikani::userinformation">
+      <a href="../Wanikani/UserInformation.html">UserInformation</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserSpecific" data-name="wanikani::userspecific">
+      <a href="../Wanikani/UserSpecific.html">UserSpecific</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Vocabulary" data-name="wanikani::vocabulary">
+      <a href="../Wanikani/Vocabulary.html">Vocabulary</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Wanikani::Kanji
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Wanikani/Kanji.html">Wanikani::Kanji</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/asterite/wanikani/blob/22c50627b8224106e3e1765b75ff5f6f6ef730ce/src/wanikani/models.cr#L80" target="_blank">wanikani/models.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_159%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_159 : JSON::PullParser)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#character%3AString-instance-method" class="signature"><strong>#character</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#character%3D%28_character%3AString%29-instance-method" class="signature"><strong>#character=</strong>(_character : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#important_reading%3AString-instance-method" class="signature"><strong>#important_reading</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#important_reading%3D%28_important_reading%3AString%29-instance-method" class="signature"><strong>#important_reading=</strong>(_important_reading : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kunyomi%3AString%3F-instance-method" class="signature"><strong>#kunyomi</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kunyomi%3D%28_kunyomi%3A%3A%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#kunyomi=</strong>(_kunyomi : ::Union(String, Nil))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#level%3AInt32-instance-method" class="signature"><strong>#level</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#level%3D%28_level%3AInt32%29-instance-method" class="signature"><strong>#level=</strong>(_level : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#meaning%3AString-instance-method" class="signature"><strong>#meaning</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#meaning%3D%28_meaning%3AString%29-instance-method" class="signature"><strong>#meaning=</strong>(_meaning : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nanori%3AString%3F-instance-method" class="signature"><strong>#nanori</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nanori%3D%28_nanori%3A%3A%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#nanori=</strong>(_nanori : ::Union(String, Nil))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#onyomi%3AString%3F-instance-method" class="signature"><strong>#onyomi</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#onyomi%3D%28_onyomi%3A%3A%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#onyomi=</strong>(_onyomi : ::Union(String, Nil))</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#user_specific%3AWanikani%3A%3AUserSpecific%3F-instance-method" class="signature"><strong>#user_specific</strong> : Wanikani::UserSpecific?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#user_specific%3D%28_user_specific%3A%3A%3AUnion%28UserSpecific%2CNil%29%29-instance-method" class="signature"><strong>#user_specific=</strong>(_user_specific : ::Union(UserSpecific, Nil))</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(__temp_159:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_159 : JSON::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_159%3AJSON%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="character:String-instance-method">
+      <div class="signature">
+        
+        def <strong>character</strong> : String
+
+        <a class="method-permalink" href="#character%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="character=(_character:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>character=</strong>(_character : String)
+
+        <a class="method-permalink" href="#character%3D%28_character%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="important_reading:String-instance-method">
+      <div class="signature">
+        
+        def <strong>important_reading</strong> : String
+
+        <a class="method-permalink" href="#important_reading%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="important_reading=(_important_reading:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>important_reading=</strong>(_important_reading : String)
+
+        <a class="method-permalink" href="#important_reading%3D%28_important_reading%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kunyomi:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>kunyomi</strong> : String?
+
+        <a class="method-permalink" href="#kunyomi%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kunyomi=(_kunyomi:::Union(String,Nil))-instance-method">
+      <div class="signature">
+        
+        def <strong>kunyomi=</strong>(_kunyomi : ::Union(String, Nil))
+
+        <a class="method-permalink" href="#kunyomi%3D%28_kunyomi%3A%3A%3AUnion%28String%2CNil%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="level:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>level</strong> : Int32
+
+        <a class="method-permalink" href="#level%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="level=(_level:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>level=</strong>(_level : Int32)
+
+        <a class="method-permalink" href="#level%3D%28_level%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="meaning:String-instance-method">
+      <div class="signature">
+        
+        def <strong>meaning</strong> : String
+
+        <a class="method-permalink" href="#meaning%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="meaning=(_meaning:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>meaning=</strong>(_meaning : String)
+
+        <a class="method-permalink" href="#meaning%3D%28_meaning%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nanori:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>nanori</strong> : String?
+
+        <a class="method-permalink" href="#nanori%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nanori=(_nanori:::Union(String,Nil))-instance-method">
+      <div class="signature">
+        
+        def <strong>nanori=</strong>(_nanori : ::Union(String, Nil))
+
+        <a class="method-permalink" href="#nanori%3D%28_nanori%3A%3A%3AUnion%28String%2CNil%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="onyomi:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>onyomi</strong> : String?
+
+        <a class="method-permalink" href="#onyomi%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="onyomi=(_onyomi:::Union(String,Nil))-instance-method">
+      <div class="signature">
+        
+        def <strong>onyomi=</strong>(_onyomi : ::Union(String, Nil))
+
+        <a class="method-permalink" href="#onyomi%3D%28_onyomi%3A%3A%3AUnion%28String%2CNil%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(json : JSON::Builder)
+
+        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="user_specific:Wanikani::UserSpecific?-instance-method">
+      <div class="signature">
+        
+        def <strong>user_specific</strong> : <a href="../Wanikani/UserSpecific.html">Wanikani::UserSpecific</a>?
+
+        <a class="method-permalink" href="#user_specific%3AWanikani%3A%3AUserSpecific%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="user_specific=(_user_specific:::Union(UserSpecific,Nil))-instance-method">
+      <div class="signature">
+        
+        def <strong>user_specific=</strong>(_user_specific : ::Union(<a href="../Wanikani/UserSpecific.html">UserSpecific</a>, Nil))
+
+        <a class="method-permalink" href="#user_specific%3D%28_user_specific%3A%3A%3AUnion%28UserSpecific%2CNil%29%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

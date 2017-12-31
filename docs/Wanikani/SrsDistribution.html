@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/asterite/wanikani">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Wanikani::SrsDistribution - github.com/asterite/wanikani</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani" data-name="wanikani">
+      <a href="../Wanikani.html">Wanikani</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/asterite/wanikani/Wanikani/API" data-name="wanikani::api">
+      <a href="../Wanikani/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/API/Error" data-name="wanikani::api::error">
+      <a href="../Wanikani/API/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/CriticalItem" data-name="wanikani::criticalitem">
+      <a href="../Wanikani/CriticalItem.html">CriticalItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Kanji" data-name="wanikani::kanji">
+      <a href="../Wanikani/Kanji.html">Kanji</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/LevelProgression" data-name="wanikani::levelprogression">
+      <a href="../Wanikani/LevelProgression.html">LevelProgression</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Radical" data-name="wanikani::radical">
+      <a href="../Wanikani/Radical.html">Radical</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/RecentUnlock" data-name="wanikani::recentunlock">
+      <a href="../Wanikani/RecentUnlock.html">RecentUnlock</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/asterite/wanikani/Wanikani/SrsDistribution" data-name="wanikani::srsdistribution">
+      <a href="../Wanikani/SrsDistribution.html">SrsDistribution</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/StudyQueue" data-name="wanikani::studyqueue">
+      <a href="../Wanikani/StudyQueue.html">StudyQueue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserInformation" data-name="wanikani::userinformation">
+      <a href="../Wanikani/UserInformation.html">UserInformation</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserSpecific" data-name="wanikani::userspecific">
+      <a href="../Wanikani/UserSpecific.html">UserSpecific</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Vocabulary" data-name="wanikani::vocabulary">
+      <a href="../Wanikani/Vocabulary.html">Vocabulary</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Wanikani::SrsDistribution
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Wanikani/SrsDistribution.html">Wanikani::SrsDistribution</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/asterite/wanikani/blob/22c50627b8224106e3e1765b75ff5f6f6ef730ce/src/wanikani/models.cr#L37" target="_blank">wanikani/models.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_101%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_101 : JSON::PullParser)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#kanji%3AInt32-instance-method" class="signature"><strong>#kanji</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kanji%3D%28_kanji%3AInt32%29-instance-method" class="signature"><strong>#kanji=</strong>(_kanji : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#radicals%3AInt32-instance-method" class="signature"><strong>#radicals</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#radicals%3D%28_radicals%3AInt32%29-instance-method" class="signature"><strong>#radicals=</strong>(_radicals : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#total%3AInt32-instance-method" class="signature"><strong>#total</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#total%3D%28_total%3AInt32%29-instance-method" class="signature"><strong>#total=</strong>(_total : Int32)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#vocabulary%3AInt32-instance-method" class="signature"><strong>#vocabulary</strong> : Int32</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#vocabulary%3D%28_vocabulary%3AInt32%29-instance-method" class="signature"><strong>#vocabulary=</strong>(_vocabulary : Int32)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(__temp_101:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_101 : JSON::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_101%3AJSON%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="kanji:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>kanji</strong> : Int32
+
+        <a class="method-permalink" href="#kanji%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kanji=(_kanji:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>kanji=</strong>(_kanji : Int32)
+
+        <a class="method-permalink" href="#kanji%3D%28_kanji%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="radicals:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>radicals</strong> : Int32
+
+        <a class="method-permalink" href="#radicals%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="radicals=(_radicals:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>radicals=</strong>(_radicals : Int32)
+
+        <a class="method-permalink" href="#radicals%3D%28_radicals%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(json : JSON::Builder)
+
+        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="total:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>total</strong> : Int32
+
+        <a class="method-permalink" href="#total%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="total=(_total:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>total=</strong>(_total : Int32)
+
+        <a class="method-permalink" href="#total%3D%28_total%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="vocabulary:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>vocabulary</strong> : Int32
+
+        <a class="method-permalink" href="#vocabulary%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="vocabulary=(_vocabulary:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>vocabulary=</strong>(_vocabulary : Int32)
+
+        <a class="method-permalink" href="#vocabulary%3D%28_vocabulary%3AInt32%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

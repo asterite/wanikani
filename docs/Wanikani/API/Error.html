@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/asterite/wanikani">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Wanikani::API::Error - github.com/asterite/wanikani</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani" data-name="wanikani">
+      <a href="../../Wanikani.html">Wanikani</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani/API" data-name="wanikani::api">
+      <a href="../../Wanikani/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/asterite/wanikani/Wanikani/API/Error" data-name="wanikani::api::error">
+      <a href="../../Wanikani/API/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/CriticalItem" data-name="wanikani::criticalitem">
+      <a href="../../Wanikani/CriticalItem.html">CriticalItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Kanji" data-name="wanikani::kanji">
+      <a href="../../Wanikani/Kanji.html">Kanji</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/LevelProgression" data-name="wanikani::levelprogression">
+      <a href="../../Wanikani/LevelProgression.html">LevelProgression</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Radical" data-name="wanikani::radical">
+      <a href="../../Wanikani/Radical.html">Radical</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/RecentUnlock" data-name="wanikani::recentunlock">
+      <a href="../../Wanikani/RecentUnlock.html">RecentUnlock</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/SrsDistribution" data-name="wanikani::srsdistribution">
+      <a href="../../Wanikani/SrsDistribution.html">SrsDistribution</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/StudyQueue" data-name="wanikani::studyqueue">
+      <a href="../../Wanikani/StudyQueue.html">StudyQueue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserInformation" data-name="wanikani::userinformation">
+      <a href="../../Wanikani/UserInformation.html">UserInformation</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/UserSpecific" data-name="wanikani::userspecific">
+      <a href="../../Wanikani/UserSpecific.html">UserSpecific</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/asterite/wanikani/Wanikani/Vocabulary" data-name="wanikani::vocabulary">
+      <a href="../../Wanikani/Vocabulary.html">Vocabulary</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Wanikani::API::Error
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Wanikani/API/Error.html">Wanikani::API::Error</a></li><li class="superclass">Exception</li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Raises in case of an API error: either an invalid API key, or invalid
+levels argument to some of the methods (radicals, kanji and vocabulary).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/asterite/wanikani/blob/22c50627b8224106e3e1765b75ff5f6f6ef730ce/src/wanikani/api.cr#L14" target="_blank">wanikani/api.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28code%3AString%2Cmessage%3AString%29-class-method" class="signature"><strong>.new</strong>(code : String, message : String)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#code%3AString-instance-method" class="signature"><strong>#code</strong> : String</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(code:String,message:String)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(code : String, message : String)
+
+        <a class="method-permalink" href="#new%28code%3AString%2Cmessage%3AString%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/22c50627b8224106e3e1765b75ff5f6f6ef730ce/src/wanikani/api.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="code:String-instance-method">
+      <div class="signature">
+        
+        def <strong>code</strong> : String
+
+        <a class="method-permalink" href="#code%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/22c50627b8224106e3e1765b75ff5f6f6ef730ce/src/wanikani/api.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
