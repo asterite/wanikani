@@ -1,0 +1,9 @@
+name: wanikani
+version: 0.1.0
+
+authors:
+  - Ary Borenszweig <asterite@gmail.com>
+
+crystal: 0.24.1
+
+license: MIT
