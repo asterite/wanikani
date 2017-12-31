@@ -12,6 +12,10 @@ dependencies:
     github: asterite/wanikani
 ```
 
+## Docs
+
+[API docs](https://asterite.github.io/wanikani/)
+
 ## Usage
 
 ```crystal
