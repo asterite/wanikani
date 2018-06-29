@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
   <meta id="repository-name" content="github.com/asterite/wanikani">
-  <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="../js/doc.js"></script>
   <title>Wanikani::UserSpecific - github.com/asterite/wanikani</title>
 </head>
 <body>
 
-<div id="types-list">
-  <div id="search-box">
-    <input type="search" id="search-input" placeholder="Search...">
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
   </div>
 
-  <ul>
-    <li><a href="../index.html">README</a></li>
-  </ul>
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
 
-  <ul>
+  <div class="types-list">
+    <ul>
   
   <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani" data-name="wanikani">
       <a href="../Wanikani.html">Wanikani</a>
@@ -97,9 +113,11 @@
   
 </ul>
 
+  </div>
 </div>
 
-<div id="main-content">
+
+<div class="main-content">
 <h1 class="type-name">
 
   <span class="kind">class</span> Wanikani::UserSpecific
@@ -116,6 +134,13 @@
 
 
 
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">JSON::Serializable</li>
+  
+  </ul>
+
 
 
 
@@ -128,7 +153,7 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/asterite/wanikani/blob/289162dd0b5217c1f82ae7a0e63051957af1b0aa/src/wanikani/models.cr#L103" target="_blank">wanikani/models.cr</a>
+      <a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L114" target="_blank">wanikani/models.cr</a>
     
     <br/>
   
@@ -141,7 +166,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28__temp_191%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_191 : JSON::PullParser)</a>
+        <a href="#new%28pull%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
         
       </li>
     
@@ -160,7 +185,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#available_date%3D%28_available_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method" class="signature"><strong>#available_date=</strong>(_available_date : ::Union(Time, Nil))</a>
+        <a href="#available_date%3D%28available_date%3ATime%3F%29-instance-method" class="signature"><strong>#available_date=</strong>(available_date : Time?)</a>
         
       </li>
     
@@ -170,7 +195,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#burned%3D%28_burned%3ABool%29-instance-method" class="signature"><strong>#burned=</strong>(_burned : Bool)</a>
+        <a href="#burned%3D%28burned%3ABool%29-instance-method" class="signature"><strong>#burned=</strong>(burned : Bool)</a>
         
       </li>
     
@@ -180,7 +205,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#burned_date%3D%28_burned_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method" class="signature"><strong>#burned_date=</strong>(_burned_date : ::Union(Time, Nil))</a>
+        <a href="#burned_date%3D%28burned_date%3ATime%3F%29-instance-method" class="signature"><strong>#burned_date=</strong>(burned_date : Time?)</a>
         
       </li>
     
@@ -190,7 +215,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning_correct%3D%28_meaning_correct%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#meaning_correct=</strong>(_meaning_correct : ::Union(Int32, Nil))</a>
+        <a href="#meaning_correct%3D%28meaning_correct%3AInt32%3F%29-instance-method" class="signature"><strong>#meaning_correct=</strong>(meaning_correct : Int32?)</a>
         
       </li>
     
@@ -200,7 +225,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning_current_streak%3D%28_meaning_current_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#meaning_current_streak=</strong>(_meaning_current_streak : ::Union(Int32, Nil))</a>
+        <a href="#meaning_current_streak%3D%28meaning_current_streak%3AInt32%3F%29-instance-method" class="signature"><strong>#meaning_current_streak=</strong>(meaning_current_streak : Int32?)</a>
         
       </li>
     
@@ -210,7 +235,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning_incorrect%3D%28_meaning_incorrect%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#meaning_incorrect=</strong>(_meaning_incorrect : ::Union(Int32, Nil))</a>
+        <a href="#meaning_incorrect%3D%28meaning_incorrect%3AInt32%3F%29-instance-method" class="signature"><strong>#meaning_incorrect=</strong>(meaning_incorrect : Int32?)</a>
         
       </li>
     
@@ -220,7 +245,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning_max_streak%3D%28_meaning_max_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#meaning_max_streak=</strong>(_meaning_max_streak : ::Union(Int32, Nil))</a>
+        <a href="#meaning_max_streak%3D%28meaning_max_streak%3AInt32%3F%29-instance-method" class="signature"><strong>#meaning_max_streak=</strong>(meaning_max_streak : Int32?)</a>
         
       </li>
     
@@ -230,7 +255,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning_note%3D%28_meaning_note%3A%3A%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#meaning_note=</strong>(_meaning_note : ::Union(String, Nil))</a>
+        <a href="#meaning_note%3D%28meaning_note%3AString%3F%29-instance-method" class="signature"><strong>#meaning_note=</strong>(meaning_note : String?)</a>
         
       </li>
     
@@ -240,7 +265,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#reading_correct%3D%28_reading_correct%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#reading_correct=</strong>(_reading_correct : ::Union(Int32, Nil))</a>
+        <a href="#reading_correct%3D%28reading_correct%3AInt32%3F%29-instance-method" class="signature"><strong>#reading_correct=</strong>(reading_correct : Int32?)</a>
         
       </li>
     
@@ -250,7 +275,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#reading_current_streak%3D%28_reading_current_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#reading_current_streak=</strong>(_reading_current_streak : ::Union(Int32, Nil))</a>
+        <a href="#reading_current_streak%3D%28reading_current_streak%3AInt32%3F%29-instance-method" class="signature"><strong>#reading_current_streak=</strong>(reading_current_streak : Int32?)</a>
         
       </li>
     
@@ -260,7 +285,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#reading_incorrect%3D%28_reading_incorrect%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#reading_incorrect=</strong>(_reading_incorrect : ::Union(Int32, Nil))</a>
+        <a href="#reading_incorrect%3D%28reading_incorrect%3AInt32%3F%29-instance-method" class="signature"><strong>#reading_incorrect=</strong>(reading_incorrect : Int32?)</a>
         
       </li>
     
@@ -270,7 +295,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#reading_max_streak%3D%28_reading_max_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#reading_max_streak=</strong>(_reading_max_streak : ::Union(Int32, Nil))</a>
+        <a href="#reading_max_streak%3D%28reading_max_streak%3AInt32%3F%29-instance-method" class="signature"><strong>#reading_max_streak=</strong>(reading_max_streak : Int32?)</a>
         
       </li>
     
@@ -280,7 +305,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#reading_note%3D%28_reading_note%3A%3A%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#reading_note=</strong>(_reading_note : ::Union(String, Nil))</a>
+        <a href="#reading_note%3D%28reading_note%3AString%3F%29-instance-method" class="signature"><strong>#reading_note=</strong>(reading_note : String?)</a>
         
       </li>
     
@@ -290,7 +315,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#srs%3D%28_srs%3AString%29-instance-method" class="signature"><strong>#srs=</strong>(_srs : String)</a>
+        <a href="#srs%3D%28srs%3AString%29-instance-method" class="signature"><strong>#srs=</strong>(srs : String)</a>
         
       </li>
     
@@ -300,12 +325,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#srs_numeric%3D%28_srs_numeric%3AInt32%29-instance-method" class="signature"><strong>#srs_numeric=</strong>(_srs_numeric : Int32)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        <a href="#srs_numeric%3D%28srs_numeric%3AInt32%29-instance-method" class="signature"><strong>#srs_numeric=</strong>(srs_numeric : Int32)</a>
         
       </li>
     
@@ -315,7 +335,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#unlocked_date%3D%28_unlocked_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method" class="signature"><strong>#unlocked_date=</strong>(_unlocked_date : ::Union(Time, Nil))</a>
+        <a href="#unlocked_date%3D%28unlocked_date%3ATime%3F%29-instance-method" class="signature"><strong>#unlocked_date=</strong>(unlocked_date : Time?)</a>
         
       </li>
     
@@ -325,7 +345,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#user_synonyms%3D%28_user_synonyms%3A%3A%3AUnion%28Array%28String%29%2CNil%29%29-instance-method" class="signature"><strong>#user_synonyms=</strong>(_user_synonyms : ::Union(Array(String), Nil))</a>
+        <a href="#user_synonyms%3D%28user_synonyms%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#user_synonyms=</strong>(user_synonyms : Array(String)?)</a>
         
       </li>
     
@@ -357,21 +377,33 @@
 
 
   
+    
+
+
+    
+
+
+    
+
+
+  
 </div>
 
 
   <h2>Constructor Detail</h2>
   
-    <div class="entry-detail" id="new(__temp_191:JSON::PullParser)-class-method">
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(__temp_191 : JSON::PullParser)
+        def self.<strong>new</strong>(pull : JSON::PullParser)
 
-        <a class="method-permalink" href="#new%28__temp_191%3AJSON%3A%3APullParser%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28pull%3AJSON%3A%3APullParser%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L115" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -394,19 +426,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L124" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="available_date=(_available_date:::Union(Time,Nil))-instance-method">
+    <div class="entry-detail" id="available_date=(available_date:Time?)-instance-method">
       <div class="signature">
         
-        def <strong>available_date=</strong>(_available_date : ::Union(Time, Nil))
+        def <strong>available_date=</strong>(available_date : Time?)
 
-        <a class="method-permalink" href="#available_date%3D%28_available_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#available_date%3D%28available_date%3ATime%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L124" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -422,19 +458,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L126" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="burned=(_burned:Bool)-instance-method">
+    <div class="entry-detail" id="burned=(burned:Bool)-instance-method">
       <div class="signature">
         
-        def <strong>burned=</strong>(_burned : Bool)
+        def <strong>burned=</strong>(burned : Bool)
 
-        <a class="method-permalink" href="#burned%3D%28_burned%3ABool%29-instance-method">#</a>
+        <a class="method-permalink" href="#burned%3D%28burned%3ABool%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L126" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -450,19 +490,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L129" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="burned_date=(_burned_date:::Union(Time,Nil))-instance-method">
+    <div class="entry-detail" id="burned_date=(burned_date:Time?)-instance-method">
       <div class="signature">
         
-        def <strong>burned_date=</strong>(_burned_date : ::Union(Time, Nil))
+        def <strong>burned_date=</strong>(burned_date : Time?)
 
-        <a class="method-permalink" href="#burned_date%3D%28_burned_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#burned_date%3D%28burned_date%3ATime%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L129" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -478,19 +522,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L131" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning_correct=(_meaning_correct:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="meaning_correct=(meaning_correct:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>meaning_correct=</strong>(_meaning_correct : ::Union(Int32, Nil))
+        def <strong>meaning_correct=</strong>(meaning_correct : Int32?)
 
-        <a class="method-permalink" href="#meaning_correct%3D%28_meaning_correct%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning_correct%3D%28meaning_correct%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L131" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -506,19 +554,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L134" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning_current_streak=(_meaning_current_streak:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="meaning_current_streak=(meaning_current_streak:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>meaning_current_streak=</strong>(_meaning_current_streak : ::Union(Int32, Nil))
+        def <strong>meaning_current_streak=</strong>(meaning_current_streak : Int32?)
 
-        <a class="method-permalink" href="#meaning_current_streak%3D%28_meaning_current_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning_current_streak%3D%28meaning_current_streak%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L134" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -534,19 +586,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L132" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning_incorrect=(_meaning_incorrect:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="meaning_incorrect=(meaning_incorrect:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>meaning_incorrect=</strong>(_meaning_incorrect : ::Union(Int32, Nil))
+        def <strong>meaning_incorrect=</strong>(meaning_incorrect : Int32?)
 
-        <a class="method-permalink" href="#meaning_incorrect%3D%28_meaning_incorrect%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning_incorrect%3D%28meaning_incorrect%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L132" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -562,19 +618,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L133" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning_max_streak=(_meaning_max_streak:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="meaning_max_streak=(meaning_max_streak:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>meaning_max_streak=</strong>(_meaning_max_streak : ::Union(Int32, Nil))
+        def <strong>meaning_max_streak=</strong>(meaning_max_streak : Int32?)
 
-        <a class="method-permalink" href="#meaning_max_streak%3D%28_meaning_max_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning_max_streak%3D%28meaning_max_streak%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L133" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -590,19 +650,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L139" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning_note=(_meaning_note:::Union(String,Nil))-instance-method">
+    <div class="entry-detail" id="meaning_note=(meaning_note:String?)-instance-method">
       <div class="signature">
         
-        def <strong>meaning_note=</strong>(_meaning_note : ::Union(String, Nil))
+        def <strong>meaning_note=</strong>(meaning_note : String?)
 
-        <a class="method-permalink" href="#meaning_note%3D%28_meaning_note%3A%3A%3AUnion%28String%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning_note%3D%28meaning_note%3AString%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L139" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -618,19 +682,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L135" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="reading_correct=(_reading_correct:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="reading_correct=(reading_correct:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>reading_correct=</strong>(_reading_correct : ::Union(Int32, Nil))
+        def <strong>reading_correct=</strong>(reading_correct : Int32?)
 
-        <a class="method-permalink" href="#reading_correct%3D%28_reading_correct%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#reading_correct%3D%28reading_correct%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L135" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -646,19 +714,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L138" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="reading_current_streak=(_reading_current_streak:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="reading_current_streak=(reading_current_streak:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>reading_current_streak=</strong>(_reading_current_streak : ::Union(Int32, Nil))
+        def <strong>reading_current_streak=</strong>(reading_current_streak : Int32?)
 
-        <a class="method-permalink" href="#reading_current_streak%3D%28_reading_current_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#reading_current_streak%3D%28reading_current_streak%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L138" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -674,19 +746,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L136" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="reading_incorrect=(_reading_incorrect:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="reading_incorrect=(reading_incorrect:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>reading_incorrect=</strong>(_reading_incorrect : ::Union(Int32, Nil))
+        def <strong>reading_incorrect=</strong>(reading_incorrect : Int32?)
 
-        <a class="method-permalink" href="#reading_incorrect%3D%28_reading_incorrect%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#reading_incorrect%3D%28reading_incorrect%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L136" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -702,19 +778,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L137" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="reading_max_streak=(_reading_max_streak:::Union(Int32,Nil))-instance-method">
+    <div class="entry-detail" id="reading_max_streak=(reading_max_streak:Int32?)-instance-method">
       <div class="signature">
         
-        def <strong>reading_max_streak=</strong>(_reading_max_streak : ::Union(Int32, Nil))
+        def <strong>reading_max_streak=</strong>(reading_max_streak : Int32?)
 
-        <a class="method-permalink" href="#reading_max_streak%3D%28_reading_max_streak%3A%3A%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#reading_max_streak%3D%28reading_max_streak%3AInt32%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L137" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -730,19 +810,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L140" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="reading_note=(_reading_note:::Union(String,Nil))-instance-method">
+    <div class="entry-detail" id="reading_note=(reading_note:String?)-instance-method">
       <div class="signature">
         
-        def <strong>reading_note=</strong>(_reading_note : ::Union(String, Nil))
+        def <strong>reading_note=</strong>(reading_note : String?)
 
-        <a class="method-permalink" href="#reading_note%3D%28_reading_note%3A%3A%3AUnion%28String%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#reading_note%3D%28reading_note%3AString%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L140" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -758,19 +842,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L117" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="srs=(_srs:String)-instance-method">
+    <div class="entry-detail" id="srs=(srs:String)-instance-method">
       <div class="signature">
         
-        def <strong>srs=</strong>(_srs : String)
+        def <strong>srs=</strong>(srs : String)
 
-        <a class="method-permalink" href="#srs%3D%28_srs%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#srs%3D%28srs%3AString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L117" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -786,33 +874,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L118" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="srs_numeric=(_srs_numeric:Int32)-instance-method">
+    <div class="entry-detail" id="srs_numeric=(srs_numeric:Int32)-instance-method">
       <div class="signature">
         
-        def <strong>srs_numeric=</strong>(_srs_numeric : Int32)
+        def <strong>srs_numeric=</strong>(srs_numeric : Int32)
 
-        <a class="method-permalink" href="#srs_numeric%3D%28_srs_numeric%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#srs_numeric%3D%28srs_numeric%3AInt32%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
-      <div class="signature">
-        
-        def <strong>to_json</strong>(json : JSON::Builder)
-
-        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L118" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -828,19 +906,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L121" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="unlocked_date=(_unlocked_date:::Union(Time,Nil))-instance-method">
+    <div class="entry-detail" id="unlocked_date=(unlocked_date:Time?)-instance-method">
       <div class="signature">
         
-        def <strong>unlocked_date=</strong>(_unlocked_date : ::Union(Time, Nil))
+        def <strong>unlocked_date=</strong>(unlocked_date : Time?)
 
-        <a class="method-permalink" href="#unlocked_date%3D%28_unlocked_date%3A%3A%3AUnion%28Time%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#unlocked_date%3D%28unlocked_date%3ATime%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L121" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -856,19 +938,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L141" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="user_synonyms=(_user_synonyms:::Union(Array(String),Nil))-instance-method">
+    <div class="entry-detail" id="user_synonyms=(user_synonyms:Array(String)?)-instance-method">
       <div class="signature">
         
-        def <strong>user_synonyms=</strong>(_user_synonyms : ::Union(Array(String), Nil))
+        def <strong>user_synonyms=</strong>(user_synonyms : Array(String)?)
 
-        <a class="method-permalink" href="#user_synonyms%3D%28_user_synonyms%3A%3A%3AUnion%28Array%28String%29%2CNil%29%29-instance-method">#</a>
+        <a class="method-permalink" href="#user_synonyms%3D%28user_synonyms%3AArray%28String%29%3F%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L141" target="_blank">View source</a>]
         
       </div>
     </div>

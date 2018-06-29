@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.25.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
   <meta id="repository-name" content="github.com/asterite/wanikani">
-  <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="../js/doc.js"></script>
   <title>Wanikani::CriticalItem - github.com/asterite/wanikani</title>
 </head>
 <body>
 
-<div id="types-list">
-  <div id="search-box">
-    <input type="search" id="search-input" placeholder="Search...">
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
   </div>
 
-  <ul>
-    <li><a href="../index.html">README</a></li>
-  </ul>
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
 
-  <ul>
+  <div class="types-list">
+    <ul>
   
   <li class="parent open current" data-id="github.com/asterite/wanikani/Wanikani" data-name="wanikani">
       <a href="../Wanikani.html">Wanikani</a>
@@ -97,9 +113,11 @@
   
 </ul>
 
+  </div>
 </div>
 
-<div id="main-content">
+
+<div class="main-content">
 <h1 class="type-name">
 
   <span class="kind">class</span> Wanikani::CriticalItem
@@ -116,6 +134,13 @@
 
 
 
+  <h2>Included Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type">JSON::Serializable</li>
+  
+  </ul>
+
 
 
 
@@ -128,7 +153,7 @@
   <h2>Defined in:</h2>
   
     
-      <a href="https://github.com/asterite/wanikani/blob/289162dd0b5217c1f82ae7a0e63051957af1b0aa/src/wanikani/models.cr#L57" target="_blank">wanikani/models.cr</a>
+      <a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L66" target="_blank">wanikani/models.cr</a>
     
     <br/>
   
@@ -141,7 +166,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28__temp_127%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_127 : JSON::PullParser)</a>
+        <a href="#new%28pull%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
         
       </li>
     
@@ -160,7 +185,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#character%3D%28_character%3AString%29-instance-method" class="signature"><strong>#character=</strong>(_character : String)</a>
+        <a href="#character%3D%28character%3AString%29-instance-method" class="signature"><strong>#character=</strong>(character : String)</a>
         
       </li>
     
@@ -170,7 +195,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#kana%3D%28_kana%3AString%29-instance-method" class="signature"><strong>#kana=</strong>(_kana : String)</a>
+        <a href="#kana%3D%28kana%3AString%29-instance-method" class="signature"><strong>#kana=</strong>(kana : String)</a>
         
       </li>
     
@@ -180,7 +205,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#level%3D%28_level%3AInt32%29-instance-method" class="signature"><strong>#level=</strong>(_level : Int32)</a>
+        <a href="#level%3D%28level%3AInt32%29-instance-method" class="signature"><strong>#level=</strong>(level : Int32)</a>
         
       </li>
     
@@ -190,7 +215,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#meaning%3D%28_meaning%3AString%29-instance-method" class="signature"><strong>#meaning=</strong>(_meaning : String)</a>
+        <a href="#meaning%3D%28meaning%3AString%29-instance-method" class="signature"><strong>#meaning=</strong>(meaning : String)</a>
         
       </li>
     
@@ -200,12 +225,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#percentage%3D%28_percentage%3AInt32%29-instance-method" class="signature"><strong>#percentage=</strong>(_percentage : Int32)</a>
-        
-      </li>
-    
-      <li class="entry-summary">
-        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        <a href="#percentage%3D%28percentage%3AInt32%29-instance-method" class="signature"><strong>#percentage=</strong>(percentage : Int32)</a>
         
       </li>
     
@@ -215,7 +235,7 @@
       </li>
     
       <li class="entry-summary">
-        <a href="#type%3D%28_type%3AString%29-instance-method" class="signature"><strong>#type=</strong>(_type : String)</a>
+        <a href="#type%3D%28type%3AString%29-instance-method" class="signature"><strong>#type=</strong>(type : String)</a>
         
       </li>
     
@@ -247,21 +267,33 @@
 
 
   
+    
+
+
+    
+
+
+    
+
+
+  
 </div>
 
 
   <h2>Constructor Detail</h2>
   
-    <div class="entry-detail" id="new(__temp_127:JSON::PullParser)-class-method">
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(__temp_127 : JSON::PullParser)
+        def self.<strong>new</strong>(pull : JSON::PullParser)
 
-        <a class="method-permalink" href="#new%28__temp_127%3AJSON%3A%3APullParser%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28pull%3AJSON%3A%3APullParser%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L67" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -284,19 +316,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L70" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="character=(_character:String)-instance-method">
+    <div class="entry-detail" id="character=(character:String)-instance-method">
       <div class="signature">
         
-        def <strong>character=</strong>(_character : String)
+        def <strong>character=</strong>(character : String)
 
-        <a class="method-permalink" href="#character%3D%28_character%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#character%3D%28character%3AString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L70" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -312,19 +348,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L71" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="kana=(_kana:String)-instance-method">
+    <div class="entry-detail" id="kana=(kana:String)-instance-method">
       <div class="signature">
         
-        def <strong>kana=</strong>(_kana : String)
+        def <strong>kana=</strong>(kana : String)
 
-        <a class="method-permalink" href="#kana%3D%28_kana%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#kana%3D%28kana%3AString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L71" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -340,19 +380,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L73" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="level=(_level:Int32)-instance-method">
+    <div class="entry-detail" id="level=(level:Int32)-instance-method">
       <div class="signature">
         
-        def <strong>level=</strong>(_level : Int32)
+        def <strong>level=</strong>(level : Int32)
 
-        <a class="method-permalink" href="#level%3D%28_level%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#level%3D%28level%3AInt32%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L73" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -368,19 +412,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L72" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="meaning=(_meaning:String)-instance-method">
+    <div class="entry-detail" id="meaning=(meaning:String)-instance-method">
       <div class="signature">
         
-        def <strong>meaning=</strong>(_meaning : String)
+        def <strong>meaning=</strong>(meaning : String)
 
-        <a class="method-permalink" href="#meaning%3D%28_meaning%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#meaning%3D%28meaning%3AString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L72" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -396,33 +444,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L76" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="percentage=(_percentage:Int32)-instance-method">
+    <div class="entry-detail" id="percentage=(percentage:Int32)-instance-method">
       <div class="signature">
         
-        def <strong>percentage=</strong>(_percentage : Int32)
+        def <strong>percentage=</strong>(percentage : Int32)
 
-        <a class="method-permalink" href="#percentage%3D%28_percentage%3AInt32%29-instance-method">#</a>
+        <a class="method-permalink" href="#percentage%3D%28percentage%3AInt32%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
-      <div class="signature">
-        
-        def <strong>to_json</strong>(json : JSON::Builder)
-
-        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L76" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -438,19 +476,23 @@
       <br/>
       <div>
         
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L69" target="_blank">View source</a>]
+        
       </div>
     </div>
   
-    <div class="entry-detail" id="type=(_type:String)-instance-method">
+    <div class="entry-detail" id="type=(type:String)-instance-method">
       <div class="signature">
         
-        def <strong>type=</strong>(_type : String)
+        def <strong>type=</strong>(type : String)
 
-        <a class="method-permalink" href="#type%3D%28_type%3AString%29-instance-method">#</a>
+        <a class="method-permalink" href="#type%3D%28type%3AString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
+        
+          [<a href="https://github.com/asterite/wanikani/blob/1cdeb7e615ee878da78135f95d7259b78d666f95/src/wanikani/models.cr#L69" target="_blank">View source</a>]
         
       </div>
     </div>
