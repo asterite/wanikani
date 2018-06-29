@@ -1,125 +1,144 @@
 module Wanikani
   class UserInformation
-    JSON.mapping(
-      username: String,
-      gravatar: String?,
-      level: Int32,
-      title: String,
-      about: String,
-      website: String?,
-      twitter: String?,
-      topics_count: Int32,
-      posts_count: Int32,
-      creation_date: {type: Time, converter: Time::EpochConverter},
-      vacation_date: {type: Time?, converter: NilEpochConverter},
-    )
+    include JSON::Serializable
+
+    property username : String
+    property gravatar : String?
+    property level : Int32
+    property title : String
+    property about : String
+    property website : String?
+    property twitter : String?
+    property topics_count : Int32
+    property posts_count : Int32
+
+    @[JSON::Field(converter: Time::EpochConverter)]
+    property creation_date : Time
+
+    @[JSON::Field(converter: ::Wanikani::NilEpochConverter)]
+    property vacation_date : Time?
   end
 
   class StudyQueue
-    JSON.mapping(
-      lessons_available: Int32,
-      reviews_available: Int32,
-      next_review_date: {type: Time, converter: Time::EpochConverter},
-      reviews_available_next_hour: Int32,
-      reviews_available_next_day: Int32,
-    )
+    include JSON::Serializable
+
+    property lessons_available : Int32
+    property reviews_available : Int32
+
+    @[JSON::Field(converter: Time::EpochConverter)]
+    property next_review_date : Time
+
+    property reviews_available_next_hour : Int32
+    property reviews_available_next_day : Int32
   end
 
   class LevelProgression
-    JSON.mapping(
-      radicals_progress: Int32,
-      radicals_total: Int32,
-      kanji_progress: Int32,
-      kanji_total: Int32,
-    )
+    include JSON::Serializable
+
+    property radicals_progress : Int32
+    property radicals_total : Int32
+    property kanji_progress : Int32
+    property kanji_total : Int32
   end
 
   class SrsDistribution
-    JSON.mapping(
-      radicals: Int32,
-      kanji: Int32,
-      vocabulary: Int32,
-      total: Int32,
-    )
+    include JSON::Serializable
+
+    property radicals : Int32
+    property kanji : Int32
+    property vocabulary : Int32
+    property total : Int32
   end
 
   class RecentUnlock
-    JSON.mapping(
-      type: String,
-      character: String,
-      kana: String,
-      meaning: String,
-      level: Int32,
-      unlocked_date: {type: Time, converter: Time::EpochConverter},
-    )
+    include JSON::Serializable
+
+    property type : String
+    property character : String
+    property kana : String
+    property meaning : String
+    property level : Int32
+
+    @[JSON::Field(converter: Time::EpochConverter)]
+    property unlocked_date : Time
   end
 
   class CriticalItem
-    JSON.mapping(
-      type: String,
-      character: String,
-      kana: String,
-      meaning: String,
-      level: Int32,
-      percentage: {type: Int32, converter: StringToInt32Converter},
-    )
+    include JSON::Serializable
+
+    property type : String
+    property character : String
+    property kana : String
+    property meaning : String
+    property level : Int32
+
+    @[JSON::Field(converter: ::Wanikani::StringToInt32Converter)]
+    property percentage : Int32
   end
 
   class Radical
-    JSON.mapping(
-      level: Int32,
-      character: String?,
-      meaning: String,
-      image_file_name: String?,
-      image_content_type: String?,
-      image_file_size: Int32?,
-      user_specific: UserSpecific?,
-    )
+    include JSON::Serializable
+
+    property level : Int32
+    property character : String?
+    property meaning : String
+    property image_file_name : String?
+    property image_content_type : String?
+    property image_file_size : Int32?
+    property user_specific : UserSpecific?
   end
 
   class Kanji
-    JSON.mapping(
-      level: Int32,
-      character: String,
-      meaning: String,
-      onyomi: String?,
-      kunyomi: String?,
-      important_reading: String,
-      nanori: String?,
-      user_specific: UserSpecific?,
-    )
+    include JSON::Serializable
+
+    property level : Int32
+    property character : String
+    property meaning : String
+    property onyomi : String?
+    property kunyomi : String?
+    property important_reading : String
+    property nanori : String?
+    property user_specific : UserSpecific?
   end
 
   class Vocabulary
-    JSON.mapping(
-      level: Int32,
-      character: String,
-      kana: String,
-      meaning: String,
-      user_specific: UserSpecific?,
-    )
+    include JSON::Serializable
+
+    property level : Int32
+    property character : String
+    property kana : String
+    property meaning : String
+    property user_specific : UserSpecific?
   end
 
   class UserSpecific
-    JSON.mapping(
-      srs: String,
-      srs_numeric: Int32,
-      unlocked_date: {type: Time?, converter: NilEpochConverter},
-      available_date: {type: Time?, converter: NilEpochConverter},
-      burned: Bool,
-      burned_date: {type: Time?, converter: NilEpochConverter},
-      meaning_correct: Int32?,
-      meaning_incorrect: Int32?,
-      meaning_max_streak: Int32?,
-      meaning_current_streak: Int32?,
-      reading_correct: Int32?,
-      reading_incorrect: Int32?,
-      reading_max_streak: Int32?,
-      reading_current_streak: Int32?,
-      meaning_note: String?,
-      reading_note: String?,
-      user_synonyms: Array(String)?,
-    )
+    include JSON::Serializable
+
+    property srs : String
+    property srs_numeric : Int32
+
+    @[JSON::Field(converter: ::Wanikani::NilEpochConverter)]
+    property unlocked_date : Time?
+
+    @[JSON::Field(converter: ::Wanikani::NilEpochConverter)]
+    property available_date : Time?
+
+    property burned : Bool
+
+    @[JSON::Field(converter: ::Wanikani::NilEpochConverter)]
+    property burned_date : Time?
+
+    property meaning_correct : Int32?
+    property meaning_incorrect : Int32?
+    property meaning_max_streak : Int32?
+    property meaning_current_streak : Int32?
+    property reading_correct : Int32?
+    property reading_incorrect : Int32?
+    property reading_max_streak : Int32?
+    property reading_current_streak : Int32?
+    property meaning_note : String?
+    property reading_note : String?
+    property user_synonyms : Array(String)?
   end
 
   # :nodoc:

@@ -99,24 +99,24 @@ module Wanikani
 
   # :nodoc:
   class Response(T)
-    JSON.mapping(
-      user_information: UserInformation,
-      requested_information: T,
-    )
+    include JSON::Serializable
+
+    property user_information : UserInformation
+    property requested_information : T
   end
 
   # :nodoc:
   class ErrorResponse
-    JSON.mapping(
-      user_information: UserInformation,
-      error: NamedTuple(code: String, message: String),
-    )
+    include JSON::Serializable
+
+    property user_information : UserInformation
+    property error : NamedTuple(code: String, message: String)
   end
 
   # :nodoc:
   class General(T)
-    JSON.mapping(
-      general: T,
-    )
+    include JSON::Serializable
+
+    property general : T
   end
 end
